@@ -21,7 +21,12 @@
         <div>
           <img class="w-2/4 lg:w-3/5" src="./images/logo.png" alt="" />
         </div>
-        <div class="text-3xl cursor-pointer" @click="open = true">&equiv;</div>
+        <div
+          class="text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl cursor-pointer"
+          @click="open = true"
+        >
+          &equiv;
+        </div>
       </header>
       <div
         class="flex justify-around px-4 mt-7"
@@ -34,25 +39,16 @@
         x-transition:leave-end="opacity-0 transform -translate-y-4"
         @click.outside="open = false"
       >
-        <a class="link-active" href="#">Home</a>
-        <a class="link" href="#">Packages</a>
-        <a class="link" href="#">About Us</a>
-        <a class="link" href="#">Contact Us</a>
+        <a class="link-active lg:text-lg xl:text-xl" href="#">Home</a>
+        <a class="link lg:text-lg xl:text-xl" href="#">Packages</a>
+        <a class="link lg:text-lg xl:text-xl" href="#">About Us</a>
+        <a class="link lg:text-lg xl:text-xl" href="#">Contact Us</a>
       </div>
     </nav>
     <main>
       <div class="p-4 mt-6 sm:grid grid-cols-2 items-start">
         <div>
-          <h1
-            class="
-              text-gray-600
-              font-bold
-              text-4xl
-              sm:mt-12
-              md:text-5xl
-              lg:text-6xl
-            "
-          >
+          <h1 class="sm:mt-12 md:text-5xl lg:text-6xl">
             We deliver best <br />
             <span class="text-green-300">Organic food.</span>
           </h1>
@@ -69,7 +65,43 @@
         </div>
       </div>
       <div class="mt-24">
-        <h1 class="px-4 text-4xl text-green-300 font-bold">Explore Our Menu</h1>
+        <h1 class="px-4">Explore Our Menu</h1>
+        <div class="mt-12 px-4 flex flex-wrap">
+          <a
+            href="#"
+            class="mb-6 mr-4 px-6 py-4 rounded-lg bg-green-300 text-white"
+            >Breakfast</a
+          >
+          <a
+            href="#"
+            class="mb-6 mr-4 px-6 py-4 rounded-lg bg-gray-300 text-gray-700"
+            >Lunch</a
+          >
+          <a
+            href="#"
+            class="mb-6 mr-4 px-6 py-4 rounded-lg bg-gray-300 text-gray-700"
+            >Dinner</a
+          >
+          <a
+            href="#"
+            class="mb-6 mr-4 px-6 py-4 rounded-lg bg-gray-300 text-gray-700"
+            >Drinks</a
+          >
+          <a
+            href="#"
+            class="
+              md:ml-auto
+              mb-6
+              mr-4
+              px-6
+              py-4
+              rounded-lg
+              bg-green-300
+              text-white
+            "
+            >VIEW ALL</a
+          >
+        </div>
         <div class="px-4 mt-10 sm:flex sm:flex-wrap sm:px-0">
           <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
             <div class="relative w-full">
@@ -94,12 +126,22 @@
               </div>
             </div>
             <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
             >
               <h2 class="text-xl tracking-tight font-semibold text-gray-600">
                 Pancakes and Maple Syrup
               </h2>
-              <div class="mt-4 flex justify-between items-center">
+              <div class="flex justify-between items-center mt-auto">
                 <div class="text-green-300">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -118,6 +160,7 @@
                     p-2
                     bg-green-300
                     text-white
+                    cursor-pointer
                   "
                 >
                   <i class="fas fa-plus"></i>
@@ -129,8 +172,398 @@
             <div class="relative w-full">
               <img
                 class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
+                src="https://images.unsplash.com/photo-1619095956510-24c12e2c4b9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Toast image"
+              />
+              <div
+                class="
+                  absolute
+                  ml-5
+                  px-3
+                  py-1
+                  top-4
+                  bg-white
+                  text-green-300
+                  rounded-2xl
+                "
+              >
+                $15.99
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
+            >
+              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
+                Plain Toast & Butter or Jam
+              </h2>
+              <div class="mt-auto flex justify-between items-center">
+                <div class="text-green-300">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    h-10
+                    w-10
+                    flex
+                    items-center
+                    justify-center
+                    p-2
+                    bg-green-300
+                    text-white
+                    cursor-pointer
+                  "
+                >
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
+            <div class="relative w-full">
+              <img
+                class="w-full rounded-t-3xl"
+                src="https://images.unsplash.com/photo-1554280238-54bb925fc043?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Hashbrowns image"
+              />
+              <div
+                class="
+                  absolute
+                  ml-5
+                  px-3
+                  py-1
+                  top-4
+                  bg-white
+                  text-green-300
+                  rounded-2xl
+                "
+              >
+                $19.99
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
+            >
+              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
+                Hashbrowns AKA Potato Pancakes
+              </h2>
+              <div class="mt-auto flex justify-between items-center">
+                <div class="text-green-300">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    h-10
+                    w-10
+                    flex
+                    items-center
+                    justify-center
+                    p-2
+                    bg-green-300
+                    text-white
+                    cursor-pointer
+                  "
+                >
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
+            <div class="relative w-full">
+              <img
+                class="w-full rounded-t-3xl"
+                src="https://images.unsplash.com/photo-1539252554453-80ab65ce3586?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Sandwich image"
+              />
+              <div
+                class="
+                  absolute
+                  ml-5
+                  px-3
+                  py-1
+                  top-4
+                  bg-white
+                  text-green-300
+                  rounded-2xl
+                "
+              >
+                $5.43
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
+            >
+              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
+                Sausage and Egg Sandwich
+              </h2>
+              <div class="mt-auto flex justify-between items-center">
+                <div class="text-green-300">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    h-10
+                    w-10
+                    flex
+                    items-center
+                    justify-center
+                    p-2
+                    bg-green-300
+                    text-white
+                    cursor-pointer
+                  "
+                >
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
+            <div class="relative w-full">
+              <img
+                class="w-full rounded-t-3xl"
+                src="https://images.unsplash.com/photo-1585841393012-e4ded4a6e2d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Bagel image"
+              />
+              <div
+                class="
+                  absolute
+                  ml-5
+                  px-3
+                  py-1
+                  top-4
+                  bg-white
+                  text-green-300
+                  rounded-2xl
+                "
+              >
+                $17.00
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
+            >
+              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
+                Bagel with Cream Cheese
+              </h2>
+              <div class="mt-auto flex justify-between items-center">
+                <div class="text-green-300">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    h-10
+                    w-10
+                    flex
+                    items-center
+                    justify-center
+                    p-2
+                    bg-green-300
+                    text-white
+                    cursor-pointer
+                  "
+                >
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
+            <div class="relative w-full">
+              <img
+                class="w-full rounded-t-3xl"
+                src="https://images.unsplash.com/photo-1599394922679-1214f9ee16e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Muffin image"
+              />
+              <div
+                class="
+                  absolute
+                  ml-5
+                  px-3
+                  py-1
+                  top-4
+                  bg-white
+                  text-green-300
+                  rounded-2xl
+                "
+              >
+                $11.55
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
+            >
+              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
+                Toasted English Muffin
+              </h2>
+              <div class="mt-auto flex justify-between items-center">
+                <div class="text-green-300">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    h-10
+                    w-10
+                    flex
+                    items-center
+                    justify-center
+                    p-2
+                    bg-green-300
+                    text-white
+                    cursor-pointer
+                  "
+                >
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
+            <div class="relative w-full">
+              <img
+                class="w-full rounded-t-3xl"
+                src="https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Oatmeal image"
+              />
+              <div
+                class="
+                  absolute
+                  ml-5
+                  px-3
+                  py-1
+                  top-4
+                  bg-white
+                  text-green-300
+                  rounded-2xl
+                "
+              >
+                $8.79
+              </div>
+            </div>
+            <div
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
+            >
+              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
+                Hot Oatmeal or Porridge
+              </h2>
+              <div class="mt-auto flex justify-between items-center">
+                <div class="text-green-300">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div
+                  class="
+                    rounded-full
+                    h-10
+                    w-10
+                    flex
+                    items-center
+                    justify-center
+                    p-2
+                    bg-green-300
+                    text-white
+                    cursor-pointer
+                  "
+                >
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
+            <div class="relative w-full">
+              <img
+                class="w-full rounded-t-3xl"
+                src="https://images.unsplash.com/photo-1614020211559-2efb2d06f17b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&h=500&q=80"
+                alt="Chicken fry image"
               />
               <div
                 class="
@@ -148,12 +581,22 @@
               </div>
             </div>
             <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
+              class="
+                flex flex-col
+                bg-white
+                rounded-3xl
+                relative
+                py-7
+                px-5
+                shadow-lg
+                -mt-6
+                h-44
+              "
             >
               <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
+                Chicken Fry
               </h2>
-              <div class="mt-4 flex justify-between items-center">
+              <div class="mt-auto flex justify-between items-center">
                 <div class="text-green-300">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -172,330 +615,7 @@
                     p-2
                     bg-green-300
                     text-white
-                  "
-                >
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
-            <div class="relative w-full">
-              <img
-                class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
-              />
-              <div
-                class="
-                  absolute
-                  ml-5
-                  px-3
-                  py-1
-                  top-4
-                  bg-white
-                  text-green-300
-                  rounded-2xl
-                "
-              >
-                $20.00
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
-            >
-              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
-              </h2>
-              <div class="mt-4 flex justify-between items-center">
-                <div class="text-green-300">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div
-                  class="
-                    rounded-full
-                    h-10
-                    w-10
-                    flex
-                    items-center
-                    justify-center
-                    p-2
-                    bg-green-300
-                    text-white
-                  "
-                >
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
-            <div class="relative w-full">
-              <img
-                class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
-              />
-              <div
-                class="
-                  absolute
-                  ml-5
-                  px-3
-                  py-1
-                  top-4
-                  bg-white
-                  text-green-300
-                  rounded-2xl
-                "
-              >
-                $20.00
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
-            >
-              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
-              </h2>
-              <div class="mt-4 flex justify-between items-center">
-                <div class="text-green-300">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div
-                  class="
-                    rounded-full
-                    h-10
-                    w-10
-                    flex
-                    items-center
-                    justify-center
-                    p-2
-                    bg-green-300
-                    text-white
-                  "
-                >
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
-            <div class="relative w-full">
-              <img
-                class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
-              />
-              <div
-                class="
-                  absolute
-                  ml-5
-                  px-3
-                  py-1
-                  top-4
-                  bg-white
-                  text-green-300
-                  rounded-2xl
-                "
-              >
-                $20.00
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
-            >
-              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
-              </h2>
-              <div class="mt-4 flex justify-between items-center">
-                <div class="text-green-300">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div
-                  class="
-                    rounded-full
-                    h-10
-                    w-10
-                    flex
-                    items-center
-                    justify-center
-                    p-2
-                    bg-green-300
-                    text-white
-                  "
-                >
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
-            <div class="relative w-full">
-              <img
-                class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
-              />
-              <div
-                class="
-                  absolute
-                  ml-5
-                  px-3
-                  py-1
-                  top-4
-                  bg-white
-                  text-green-300
-                  rounded-2xl
-                "
-              >
-                $20.00
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
-            >
-              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
-              </h2>
-              <div class="mt-4 flex justify-between items-center">
-                <div class="text-green-300">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div
-                  class="
-                    rounded-full
-                    h-10
-                    w-10
-                    flex
-                    items-center
-                    justify-center
-                    p-2
-                    bg-green-300
-                    text-white
-                  "
-                >
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
-            <div class="relative w-full">
-              <img
-                class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
-              />
-              <div
-                class="
-                  absolute
-                  ml-5
-                  px-3
-                  py-1
-                  top-4
-                  bg-white
-                  text-green-300
-                  rounded-2xl
-                "
-              >
-                $20.00
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
-            >
-              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
-              </h2>
-              <div class="mt-4 flex justify-between items-center">
-                <div class="text-green-300">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div
-                  class="
-                    rounded-full
-                    h-10
-                    w-10
-                    flex
-                    items-center
-                    justify-center
-                    p-2
-                    bg-green-300
-                    text-white
-                  "
-                >
-                  <i class="fas fa-plus"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mt-4 max-w-xs mx-auto sm:px-4 sm:mb-5">
-            <div class="relative w-full">
-              <img
-                class="w-full rounded-t-3xl"
-                src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&h=500&q=80"
-                alt="Salad image"
-              />
-              <div
-                class="
-                  absolute
-                  ml-5
-                  px-3
-                  py-1
-                  top-4
-                  bg-white
-                  text-green-300
-                  rounded-2xl
-                "
-              >
-                $20.00
-              </div>
-            </div>
-            <div
-              class="bg-white rounded-3xl relative py-7 px-5 shadow-lg -mt-6"
-            >
-              <h2 class="text-xl tracking-tight font-semibold text-gray-600">
-                Pancakes and Maple Syrup
-              </h2>
-              <div class="mt-4 flex justify-between items-center">
-                <div class="text-green-300">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div
-                  class="
-                    rounded-full
-                    h-10
-                    w-10
-                    flex
-                    items-center
-                    justify-center
-                    p-2
-                    bg-green-300
-                    text-white
+                    cursor-pointer
                   "
                 >
                   <i class="fas fa-plus"></i>
