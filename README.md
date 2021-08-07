@@ -9,7 +9,7 @@ Landing page built with Tailwind CSS.
 ## Table of contents 📑
 
 - [Overview](#overview)
-  - [The project](#the-challenge)
+  - [The project](#the-project)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
